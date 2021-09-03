@@ -6,6 +6,7 @@ const JetContext = createContext()
 //making provider as parent component
 const JetProvider = props => {
     const [jets, setJets] = useState([])
+    const [screen, setScreen] = useState(0)
 
     return (
         <JetContext.Provider value={[jets, setJets]}>
