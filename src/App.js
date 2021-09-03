@@ -3,16 +3,16 @@ import Banner from './components/banner';
 
 
 //import context 
-import {JetProvider} from './context/JetContext'
-import BaseJets from './views/base.jets';
+import {FlightProvider} from './context/FlightContext'
+import BaseFlights from './views/flights/base.flight';
 function App() {
   return <div className="h-screen w-screen">
-    <JetProvider>
+    <FlightProvider>
       <div className="container mx-auto bg-white h-full px-4 py-5">
         <Banner/>
-        <BaseJets/>
+        <BaseFlights/>
       </div>
-    </JetProvider>
+    </FlightProvider>
   </div>
 }
 

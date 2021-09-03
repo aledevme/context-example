@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AddJet = () => {
+const Flights = () => {
     return (
         <div>
             Jets
@@ -8,4 +8,4 @@ const AddJet = () => {
     )
 }
 
-export default AddJet
+export default Flights

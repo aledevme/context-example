@@ -1,6 +1,6 @@
 import React from 'react'
 
-const EditJet = () => {
+const EditFlight = () => {
     return (
         <div>
             Jets
@@ -8,4 +8,4 @@ const EditJet = () => {
     )
 }
 
-export default EditJet
+export default EditFlight
