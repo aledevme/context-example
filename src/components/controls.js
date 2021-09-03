@@ -1,19 +1,15 @@
 import React, { useContext } from 'react'
 import {FlightContext} from '../context/FlightContext'
 const Controls = () => {
-    const {screen, setScreen} = useContext(FlightContext)
+    const {screen, setScreen, options} = useContext(FlightContext)
     return (
         <div>
             <div className="flex flex-row">
-                <div className="px-6 py-3 rounded-tl rounded-tr bg-blue-800">
-                    Flights
-                </div>
-                <div className="px-6 py-3 rounded-tl rounded-tr bg-blue-800">
-                    Add flight
-                </div>
-                <div className="px-6 py-3 rounded-tl rounded-tr bg-blue-800">
-                    Search flight
-                </div>
+                {
+                    options.map((element, index) => <div onClick={()=> setScreen(index)} className={`px-6 cursor-pointer py-3 rounded-tl rounded-tr ${screen === index ? 'bg-blue-800' : ''}`}>
+                    {element}
+                </div>)
+                }
             </div>
         </div>
     )

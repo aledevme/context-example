@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import {FlightContext} from '../../context/FlightContext'
 import Controls from '../../components/controls'
-import {Flights, AddFlight} from '../flights'
+import {Flights, AddFlight, SearchFlights} from '../flights'
 
 const BaseFlight = () => {
     const {screen} = useContext(FlightContext)
@@ -12,6 +12,8 @@ const BaseFlight = () => {
                 return <Flights/>
             case 1:
                 return <AddFlight/>
+            case 2:
+                return <SearchFlights/>
             default:
                 <div>
                     <p>We didn't found this view</p>

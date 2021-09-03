@@ -3,7 +3,7 @@ import React from 'react'
 const AddFlight = () => {
     return (
         <div>
-            Jets
+            Add flight
         </div>
     )
 }
