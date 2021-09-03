@@ -9,7 +9,7 @@ const JetProvider = props => {
     const [screen, setScreen] = useState(0)
 
     return (
-        <JetContext.Provider value={[jets, setJets]}>
+        <JetContext.Provider value={{jets, setJets, screen, setScreen}}>
             {props.children}
         </JetContext.Provider>
     )
