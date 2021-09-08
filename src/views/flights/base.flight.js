@@ -21,7 +21,7 @@ const BaseFlight = () => {
         }
     }
     
-    return <div>
+    return <div className="">
         <Controls/>
         {renderView(screen)}
     </div>

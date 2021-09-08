@@ -1,9 +1,18 @@
 import React from 'react'
+import ItemFlight from './item.flight'
 
 const Flights = () => {
-    return (
-        <div>
-            Jets
+    return ( 
+        <div className="w-full">
+            <ItemFlight/>
+            <ItemFlight/>
+            <ItemFlight/>
+            <ItemFlight/>
+            <ItemFlight/>
+            <ItemFlight/>
+            <ItemFlight/>
+            <ItemFlight/>
+            
         </div>
     )
 }

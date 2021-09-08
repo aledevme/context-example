@@ -8,7 +8,7 @@ import BaseFlights from './views/flights/base.flight';
 function App() {
   return <div className="h-screen w-screen">
     <FlightProvider>
-      <div className="container mx-auto bg-white h-full px-4 py-5">
+      <div className="container mx-auto bg-white h-full px-4 py-5 overflow-x-hidden">
         <Banner/>
         <BaseFlights/>
       </div>
