@@ -1,2 +1,7 @@
+import {Flights, AddFlight, SearchFlights} from '../views/flights'
 const routes = ['Flights', 'Add Flight', 'Search Flights']
-export default routes
+const views  = [<Flights/>, <AddFlight/>, <SearchFlights/>]
+export {
+    routes,
+    views
+}
